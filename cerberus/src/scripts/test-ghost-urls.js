@@ -2,7 +2,7 @@
 require('dotenv').config({ path: '.env.local' });
 
 const ghostUrl = process.env.GHOST_API_URL || 'http://127.0.0.1:8080';
-const ghostKey = process.env.GHOST_CONTENT_API_KEY || '28aca8c80111fce6249a3f5991';
+const ghostKey = process.env.GHOST_CONTENT_API_KEY || '<ghostapi>';
 
 async function testUrl(url) {
   console.log(`Testing URL: ${url}`);
