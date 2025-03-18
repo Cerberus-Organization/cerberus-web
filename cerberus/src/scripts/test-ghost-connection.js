@@ -5,14 +5,14 @@ const GhostContentAPI = require('@tryghost/content-api');
 // Ghost CMS API configuration
 const api = new GhostContentAPI({
   url: process.env.GHOST_API_URL || 'http://127.0.0.1:8080',
-  key: process.env.GHOST_CONTENT_API_KEY || '28aca8c80111fce6249a3f5991',
+  key: process.env.GHOST_CONTENT_API_KEY || '<ghost_api>',
   version: 'v5.0'
 });
 
 async function testConnection() {
   console.log('Testing connection to Ghost CMS...');
   console.log('API URL:', process.env.GHOST_API_URL || 'http://127.0.0.1:8080');
-  console.log('API Key:', process.env.GHOST_CONTENT_API_KEY || '28aca8c80111fce6249a3f5991');
+  console.log('API Key:', process.env.GHOST_CONTENT_API_KEY || 'ghost_api');
   
   try {
     // Try to fetch all posts
